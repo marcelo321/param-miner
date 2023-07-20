@@ -36,7 +36,6 @@ expect
 expires
 forwarded
 from
-host~%h:%s
 if-match
 if-modified-since
 if-none-match
@@ -46,7 +45,6 @@ keep-alive
 large-allocation
 last-modified
 location
-origin~https://%s.%h
 pragma
 profile
 proxy-authenticate
@@ -54,7 +52,6 @@ proxy-authorization
 public-key-pins
 public-key-pins-report-only
 range
-referer~http://%s.%h/
 referrer-policy
 report-to
 retry-after
@@ -77,7 +74,6 @@ warning
 x-content-type-options
 x-dns-prefetch-control
 x-forwarded-for
-x-forwarded-host~%s.%h
 x-forwarded-proto
 x-forwarded-port
 front-end-https
@@ -85,7 +81,6 @@ x-forwarded-protocol
 x-forwarded-ssl
 x-url-scheme
 x-cluster-client-ip
-x-forwarded-server~%s.%h
 proxy-host
 x-wap-profile
 x-original-url
@@ -1096,8 +1091,6 @@ x-requested-with
 referer
 host
 alt-used
-x-original-url~/%s
-x-rewrite-url~/%s
 command
 __requesturi
 __requestverb
